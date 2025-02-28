@@ -14,8 +14,8 @@
     align-items: center;
     font-family: arial;
   }</style>
-    {% for post in site.posts %}
-  
+    {% for post in site.tags.other %}
+    {% if post.title != "See More" %}
     <div class="card">
       <div class="face face1">
         <div class="content">
@@ -32,6 +32,7 @@
         </div>
     </div>
 </div>
+{% endif %}
       {% endfor %}
 
 

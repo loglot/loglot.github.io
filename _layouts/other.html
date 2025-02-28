@@ -14,8 +14,7 @@
     align-items: center;
     font-family: arial;
   }</style>
-    {% for post in site.posts %}
-  
+    {% for post in site.tags.progect %}
     <div class="card">
       <div class="face face1">
         <div class="content">
@@ -34,6 +33,29 @@
 </div>
       {% endfor %}
 
+      {% for post in site.tags.other %}
+      {% if post.title == "See More" %}
+      <div class="card">
+        <div class="face face1">
+          <div class="content">
+             {{post.svg}}
+              
+             <h3>{{post.title}}</h3>
+          </div>
+        </div>
+        <div class="face face2">
+          <div class="content">
+            <p> 
+              {{ post.content }}</p>
+            <a href="{{post.link}}" type="button">{{post.button-label}}</a>
+          </div>
+      </div>
+  </div>
+  {% endif %}
+        {% endfor %}
 
    </div>
    {% include footer.html %}
+
+   
+<!--  -->
