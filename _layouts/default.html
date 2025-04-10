@@ -1,21 +1,67 @@
+<!-- {% include postHeader.html %} -->
 <title>{{page.title}}</title>
-<h1>{{page.title}}</h1>
-<p class="context">{{page.context}}</p>
-<p class="content">{{content}}</p>
+
+
+    <div class="content">
+        <div class="contentsvg">
+
+            {{page.svg}}
+        </div>
+        <h1>{{page.title}}</h1>
+        <div class="context">
+            <p>{{page.context}}</p>
+        </div>
+        <div class="main">
+            <a href="https://loglot.github.io/loglot-Blog/archive.html?tag={{page.blogTag}}">Blog Tag</a>
+            <p>{{content}}</p>
+
+        </div>
+    
+    </div>
+
+
 <style>
     h1{
+        /* position: absolute; */
         text-align: center;
+        /* width:100vw */
+        color:aliceblue;
     }
     p{
+        /* position: absolute; */
         text-align: center;
         margin: auto;
     }
     .context{
+        margin: auto;
         width:20vw;
+        background-color:rgba(240, 248, 255, 0.534);
+        border-radius: 20px;
+        color:black;
+        padding:20px;
 
     }
     .content{
+        border-radius: 20px;
+        padding: 20px;
+        margin: auto;
         width:70vw;
+        height:fit-content;
+        background-color:#19171f65;
+
+    }
+    .main{
+        padding: 20px;
+        color:aliceblue;
+
+    }
+    a{
+        position:absolute;
+        top:90vh;
+        left:50vw;
+        transform: translate(-50%, -50%);
 
     }
 </style>
+
+<!-- {% include footer.html %} -->

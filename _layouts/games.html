@@ -16,13 +16,17 @@
   }</style>
     {% for post in site.tags.game %}
     <div class="card">
-      <div class="face face1">
-        <div class="content">
-           {{post.svg}}
-            
-           <h3>{{post.title}}</h3>
+      <a href={{post.url}}
+     title="Get More Info On {{post.title}}">
+        <div class="face face1">
+          <div class="content">
+             {{post.svg}}
+              
+             <h3>{{post.title}}</h3>
+          </div>
         </div>
-      </div>
+      </a>
+      
       <div class="face face2">
         <div class="content">
           <p> 
