@@ -1,11 +1,14 @@
 {% include header.html %}
 <div class="container" order: 10>
   {% include scrollPageBody.html %}
-  
+
+
     {% for post in site.posts %}
-  
+    {% if post.title != "template" %}
     {% include card.html %}
-      {% endfor %}
+    {% endif %}
+  
+    {% endfor %}
 
 
    </div>
