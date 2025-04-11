@@ -1,0 +1,6 @@
+
+{% for post in site.tags.other %}
+{% if post.title == "See More" %}
+{% include card.html %}
+{% endif %}
+{% endfor %}

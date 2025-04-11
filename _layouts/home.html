@@ -8,11 +8,7 @@
 {% endif %}
 {% endfor %}
 
-{% for post in site.tags.other %}
-{% if post.title == "See More" %}
-{% include card.html %}
+{% include seeMore.html %}
 
-{% endif %}
-{% endfor %}
    </div>
    {% include footer.html %}
