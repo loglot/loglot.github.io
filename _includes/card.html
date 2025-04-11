@@ -1,0 +1,22 @@
+
+<div class="card">
+    <a href={{post.url}}
+   title="Get More Info On {{post.title}}">
+      <div class="face face1">
+        <div class="content">
+          <pixel-canvas data-gap="0" data-speed="1000" data-colors="#df9fdf, #bf9fff, #ff9fcf"></pixel-canvas>
+           {{post.svg}}
+            
+           <h3>{{post.title}}</h3>
+        </div>
+      </div>
+    </a>
+    
+    <div class="face face2">
+      <div class="content">
+        <p> 
+          {{ post.context }}</p>
+        <a href="{{post.link}}" type="button">{{post.button-label}}</a>
+      </div>
+  </div>
+</div>

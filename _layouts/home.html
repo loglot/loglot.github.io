@@ -4,44 +4,13 @@
     {% for post in site.tags.game %}
     {% decrement var %}
     {% if var >= -2 %}
-  
-    <div class="card">
-      <div class="face face1">
-        <div class="content">
-           {{post.svg}}
-            
-           <h3>{{post.title}}</h3>
-        </div>
-      </div>
-      <div class="face face2">
-        <div class="content">
-          <p> 
-            {{ post.content }}</p>
-          <a href="{{post.link}}" type="button">{{post.button-label}}</a>
-        </div>
-    </div>
-</div>
+    {% include card.html %}
 {% endif %}
 {% endfor %}
 
 {% for post in site.tags.other %}
 {% if post.title == "See More" %}
-<div class="card">
-  <div class="face face1">
-    <div class="content">
-       {{post.svg}}
-        
-       <h3>{{post.title}}</h3>
-    </div>
-  </div>
-  <div class="face face2">
-    <div class="content">
-      <p> 
-        {{ post.content }}</p>
-      <a href="{{post.link}}" type="button">{{post.button-label}}</a>
-    </div>
-</div>
-</div>
+{% include card.html %}
 
 {% endif %}
 {% endfor %}

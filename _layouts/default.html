@@ -1,4 +1,4 @@
-<!-- {% include postHeader.html %} -->
+ {% include postHeader.html %} 
 <title>{{page.title}}</title>
 
 
@@ -12,9 +12,12 @@
             <p>{{page.context}}</p>
         </div>
         <div class="main">
-            <a href="https://loglot.github.io/loglot-Blog/archive.html?tag={{page.blogTag}}">Blog Tag</a>
             <p>{{content}}</p>
 
+        </div>
+        <div class="buttons">
+            <a href="https://loglot.github.io/loglot-Blog/archive.html?tag={{page.blogTag}}" class="button">Blog Tag</a>
+            <a href="{{page.link}}" class="button">{{page.button-label}}</a>
         </div>
     
     </div>
@@ -55,7 +58,12 @@
         color:aliceblue;
 
     }
-    a{
+    .button{
+        padding:10px;
+        margin-left:10px;
+        margin-right:10px;
+    }
+    .buttons{
         position:absolute;
         top:90vh;
         left:50vw;
@@ -63,5 +71,6 @@
 
     }
 </style>
+<!-- <div class="gradient"></div> -->
 
-<!-- {% include footer.html %} -->
+ {% include footer.html %} 

@@ -1,56 +1,14 @@
 {% include header.html %}
 <div class="container" order: 10>
+  {% include scrollPageBody.html %}
                 
-<style>body{
-    display:flex;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-right: 0px;
-    margin-left: 0px;
-    padding:0;
-    min-height: 100vh;
-    /*background: #444;*/
-    justify-content: center;
-    align-items: center;
-    font-family: arial;
-  }</style>
     {% for post in site.tags.progect %}
-    <div class="card">
-      <div class="face face1">
-        <div class="content">
-           {{post.svg}}
-            
-           <h3>{{post.title}}</h3>
-        </div>
-      </div>
-      <div class="face face2">
-        <div class="content">
-          <p> 
-            {{ post.content }}</p>
-          <a href="{{post.link}}" type="button">{{post.button-label}}</a>
-        </div>
-    </div>
-</div>
+    {% include card.html %}
       {% endfor %}
 
       {% for post in site.tags.other %}
       {% if post.title == "See More" %}
-      <div class="card">
-        <div class="face face1">
-          <div class="content">
-             {{post.svg}}
-              
-             <h3>{{post.title}}</h3>
-          </div>
-        </div>
-        <div class="face face2">
-          <div class="content">
-            <p> 
-              {{ post.content }}</p>
-            <a href="{{post.link}}" type="button">{{post.button-label}}</a>
-          </div>
-      </div>
-  </div>
+      {% include card.html %}
   {% endif %}
         {% endfor %}
 
