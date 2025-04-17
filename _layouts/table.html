@@ -1,0 +1,66 @@
+{%include postHeader.html%}
+<style>
+
+    body {
+        background-color: #0f0f0f;
+    }
+    .padding{
+
+        padding:10vh;
+    }
+    table, th, td {
+        border: 3px solid;
+        border-radius: 3px;
+        padding:10px
+    }
+    table{
+        text-align:center;
+        background-color: #363636;
+  margin-left: auto;
+  margin-right: auto;
+    }
+    * {
+        color: #a6a6a6;
+    }
+    a {
+        color:rgb(229, 159, 255)
+    }
+    th{
+        color: #ffffff;
+        background-color: #262626;
+        height:70px;
+    }
+    td{
+        background-color: #262626;
+        transition:.4s;
+    }
+    tr{
+        transition:.4s;
+        height: 50px;
+    }
+    
+    td:hover{
+        color:#ffffff;
+    }
+    tr:hover{
+        height: 60px;
+    }
+    
+</style>
+<div class="padding"></div>
+<table>
+    <tr>
+        <th>Project</th>
+        <th>Link</th>
+        <th>Type</th>
+    </tr>
+    {% for post in site.posts %}
+    {% if post.title != "template" %}
+    {% include tr.html %}
+    {% endif %}
+  
+    {% endfor %}
+    
+</table>
+<div class="padding"></div>
+<div class="padding"></div>
