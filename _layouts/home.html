@@ -6,10 +6,9 @@
     {% decrement var %}
     {% if var >= -2 %}
     {% include card.html %}
-{% endif %}
-{% endfor %}
-
-{% include seeMore.html %}
+    {% endif %}
+    {% endfor %}
+    {% include seeMore.html %}
 
    </div>
    {% include footer.html %}
