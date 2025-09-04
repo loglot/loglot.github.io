@@ -17,6 +17,8 @@
     margin-top: 20vh; */
     padding-top:20vh;
     padding-bottom:20vh;
+    padding-left:5vw;
+    padding-right:5vw;
     pointer-events: none;
     /* height:fit-content */
     
