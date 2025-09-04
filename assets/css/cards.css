@@ -90,13 +90,12 @@
   }
   
   
-  .scroll {
+  /* .scroll { */
   
     /* position: absolute;  */
-  }
+  /* } */
 
   svg:not(.waves){
-      /* transform: translate(-50%,0%); */
       top:0%;
       width:100px;
       height:100px;
