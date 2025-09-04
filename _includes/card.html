@@ -1,6 +1,13 @@
 
 <div class="card">
-    <a href={{post.url}}
+    <div class="svg"><b><a href="{{post.url}}" type="button" title="Get More Info On {{post.title}}">{{post.svg}}</a></b></div>
+  
+  <h3>{{post.title}}</h3>
+  <p> {{ post.context }}</p>
+  <div class="links">
+    <a href="{{post.link}}" type="button">{{post.button-label}}</a>
+  </div>
+  <!-- <a href={{post.url}}
    title="Get More Info On {{post.title}}">
       <div class="face face1">
         <div class="content">
@@ -18,5 +25,5 @@
           {{ post.context }}</p>
         <a href="{{post.link}}" type="button">{{post.button-label}}</a>
       </div>
-  </div>
+  </div> -->
 </div>

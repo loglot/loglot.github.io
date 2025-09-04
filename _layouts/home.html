@@ -2,11 +2,8 @@
 {% include mastodon.html %}
 <div class="container" order: 10>
                 
-    {% for post in site.tags.game %}
-    {% decrement var %}
-    {% if var >= -2 %}
+    {% for post in site.tags.game limit:2 %}
     {% include card.html %}
-    {% endif %}
     {% endfor %}
     {% include seeMore.html %}
 
