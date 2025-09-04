@@ -15,12 +15,15 @@
     /* height: 0px; */
     /* margin-bottom: 20vh;
     margin-top: 20vh; */
-    padding:20vh
+    padding-top:20vh;
+    padding-bottom:20vh;
+    pointer-events: none;
     /* height:fit-content */
     
   }
   
   .container .card{
+    pointer-events:all;
     display: inline-block;
     position: relative;
     background-color: #4d4d4d4d;
@@ -31,7 +34,7 @@
     margin:.3vw;
     color:white;
     backdrop-filter: blur(10px);
-      transition: .5s;
+      transition: .5s; user-select: none;
   }
   .container .card:hover{
     background-color: #4d4d4dad;
