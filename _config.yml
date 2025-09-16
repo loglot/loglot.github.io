@@ -1,0 +1,3 @@
+url: "https://loglot.co.in"
+plugins:
+  - jekyll-sitemap
