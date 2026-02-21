@@ -112,6 +112,11 @@
     font-size:100px;
 
   }
+  
+@font-face {
+  font-family: "nix";
+  src: url("./Web437_Nix8810_M16.woff") format('woff');
+}
   .svg{
     position:relative;
     left:50%;
